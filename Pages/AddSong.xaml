@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="T1809E_UWP_DAPI.AddSong"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:T1809E_UWP_DAPI.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="612" Width="967">
+
+    <Grid Background="{ThemeResource SystemControlAcrylicElementBrush}">
+        <Grid Width="950" Height="500">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="0" Grid.Row="0" Text="Song name" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="28"/>
+            <TextBox x:Name="firstName" Grid.Column="1" Grid.Row="0" Margin="2" Height="50" Width="550" FontSize="18"/>
+
+            <TextBlock Grid.Column="0" Grid.Row="1" Text="Author name" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="28"/>
+            <TextBox x:Name="lastName" Grid.Column="1" Grid.Row="1" Margin="2" Height="50" Width="550" FontSize="18"/>
+
+            <TextBlock Grid.Column="0" Grid.Row="2" Text="Singer name" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="28"/>
+            <TextBox x:Name="password" Grid.Column="1" Grid.Row="2" Margin="2" Height="50" Width="550" FontSize="18"/>
+
+            <TextBlock Grid.Column="0" Grid.Row="3" Text="Thumbnai" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="28"/>
+            <TextBox x:Name="confirmPassword" Grid.Column="1" Grid.Row="3" Margin="2" Height="50" Width="550" FontSize="18"/>
+
+            <TextBlock Grid.Column="0" Grid.Row="4" Text="Song Link" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="28"/>
+            <TextBox x:Name="address" Grid.Column="1" Grid.Row="4" Margin="2" Height="50" Width="550" FontSize="18"/>
+            
+            <Button x:Name="submit" Grid.Column="1" Grid.Row="10" Height="70" Content="Submit" Width="547" HorizontalAlignment="Center" FontSize="24"/>
+        </Grid>
+    </Grid>
+</Page>
